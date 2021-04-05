@@ -1,4 +1,6 @@
 # Byte-compiled / optimized / DLL files
+cintia 
+scraped_*
 __pycache__/
 *.py[cod]
 *$py.class
