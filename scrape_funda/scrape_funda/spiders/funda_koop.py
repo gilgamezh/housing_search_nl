@@ -11,7 +11,8 @@ class FundaSpider(scrapy.Spider):
         urls = [
 #            "https://www.funda.nl/en/koop/1072am/beschikbaar/65-80-woonopp/2+slaapkamers/+5km/sorteer-datum-af/",
 #            "https://www.funda.nl/en/koop/amsterdam/beschikbaar/0-800000/60+woonopp/3-dagen/sorteer-datum-af/",  # 3 days
-            "https://www.funda.nl/en/koop/amsterdam/beschikbaar/0-800000/60+woonopp/sorteer-datum-af/"
+#            "https://www.funda.nl/en/koop/amsterdam/beschikbaar/0-800000/60+woonopp/sorteer-datum-af/"
+            "https://www.funda.nl/en/koop/amsterdam/oude-pijp/beschikbaar/60-90-woonopp/2+slaapkamers/10-dagen/+2km/sorteer-datum-af/"
         ]
         for url in urls:
             yield scrapy.Request(url, callback=self.parse)
